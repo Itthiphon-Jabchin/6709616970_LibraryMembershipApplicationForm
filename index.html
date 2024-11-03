@@ -7,50 +7,68 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
+    <br>
     <h1>ลงทะเบียนสมัครสมาชิก</h1><br>
     <p>กรุณากรอกข้อมูลให้ครบถ้วน</p>
     <label for="name">ชื่อ-นามสกุล</label><br>
     <input type="text" id="name_thai" name="name" placeholder="ใส่ชื่อ-นามสกุล"><br>
     <label for="name">ชื่อ-นามสกุล (ภาษาอังกฤษ)</label><br>
     <input type="text" id="name_english" name="name" placeholder="Enter Name"><br>
-    <label for="gender">เพศ</label>
-    <select name="gender" id="gender">
-        <option value="male">ชาย</option>
-        <option value="female">หญิง</option>
-        <option value="LGBTQA+">อื่นๆ</option>
-    </select>
-    <label for="id">รหัสนักศึกษา</label>
-    <input type="number" id="id" name="id" placeholder="ใส่รหัสนักศึกษา 10 หลัก">
-    <label for="faculty">คณะที่ศึกษา</label>
-    <input type="text" id="faculty" name="faculty" placeholder="ใส่คณะที่กำลังศึกษาอยู่"><br>
+    <div class="form-row">
+        <div class="form-group">
+            <label for="gender">เพศ</label>
+            <select name="gender" id="gender">
+                <option value="male"><span class="option">ชาย</span></option>
+                <option value="female"><span class="option">หญิง</span></option>
+                <option value="LGBTQA+"><span class="option">อื่นๆ</span></option>
+            </select>
+        </div>
+        <div class="form-group">
+            <label for="id">รหัสนักศึกษา</label>
+            <input type="number" id="id" name="id" placeholder="ใส่รหัสนักศึกษา 10 หลัก">
+        </div>
+        <div class="form-group">
+            <label for="faculty">คณะที่ศึกษา</label>
+            <input type="text" id="faculty" name="faculty" placeholder="ใส่คณะที่กำลังศึกษาอยู่"><br>
+        </div>
+    </div>
     <label for="email">Email</label>
     <input type="email" id="email" name="email" placeholder="ใส่อีเมลของคุณ">
-    <label type="birthday">เดือน/วัน/ปีเกิด</label>
-    <input type="date" id="birthday" name="date">
-    <label for="book">ประเภทของหนังสือที่สนใจ</label>
-    <select name="book" id="book">
-        <option value="Fiction">1.นิยาย</option>
-        <option value="Comics/Graphic Novels">2.หนังสือการ์ตูน</option>
-        <option value="Science Fiction">3.นวนิยายวิทยาศาสตร์</option>
-        <option value="Fantasy">4.แฟนตาซี</option>
-        <option value="Romance">5.นิยายโรแมนติก</option>
-        <option value="Mystery/Thriller">6.สืบสวนสอบสวน</option>
-        <option value="History">7.ประวัติศาสตร์</option>
-        <option value="Textbooks">8.หนังสือเรียน</option>
-        <option value="Non-fiction">9.หนังสือสารคดี</option>
-        <option value="Psychology">10.จิตวิทยา</option>
-        <option value="Self-help">11.การพัฒนาตนเอง</option>
-        <option value="Art">12.ศิลปะ</option>
-        <option value="Business">13.ธุรกิจ</option>
-        <option value="Technology">14.เทคโนโลยี</option>
-        <option value="Health">15.สาธารณสุข</option>
-    </select><br>
-    <label for="checkbox">ความต้องการรับข่าวสารข้อมูลของห้องสมุดทางอีเมลหรือไม่</label>
+    <div class="form-row">
+        <div class="form-group">
+            <label type="birthday">เดือน/วัน/ปีเกิด</label>
+            <input type="date" id="birthday" name="date">
+        </div>
+        <div class="form-group">
+            <label for="book">ประเภทของหนังสือที่สนใจ</label>
+            <select name="book" id="book">
+                <option value="Fiction">1.นิยาย</option>
+                <option value="Comics/Graphic Novels">2.หนังสือการ์ตูน</option>
+                <option value="Science Fiction">3.นวนิยายวิทยาศาสตร์</option>
+                <option value="Fantasy">4.แฟนตาซี</option>
+                <option value="Romance">5.นิยายโรแมนติก</option>
+                <option value="Mystery/Thriller">6.สืบสวนสอบสวน</option>
+                <option value="History">7.ประวัติศาสตร์</option>
+                <option value="Textbooks">8.หนังสือเรียน</option>
+                <option value="Non-fiction">9.หนังสือสารคดี</option>
+                <option value="Psychology">10.จิตวิทยา</option>
+                <option value="Self-help">11.การพัฒนาตนเอง</option>
+                <option value="Art">12.ศิลปะ</option>
+                <option value="Business">13.ธุรกิจ</option>
+                <option value="Technology">14.เทคโนโลยี</option>
+                <option value="Health">15.สาธารณสุข</option>
+            </select><br>
+        </div>
+    </div>
+    <label for="checkbox">ความต้องการรับข่าวสารข้อมูลของห้องสมุดทางอีเมลหรือไม่ <br>
     <input type="radio" name="sevice" value="yes" checked="checked"> ต้องการ
     <input type="radio" name="sevice" value="no" > ไม่ต้องการ
     <br>
-    <input type="submit" name="submit" value="Register" id="register">
-
+    <div class="submit-container">
+        <input type="submit" name="submit" value="Register" id="register">
+    </div>
+</label>
+<br><br><br><br>
 
 </body>
 </html>

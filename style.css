@@ -1,0 +1,140 @@
+@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+Thai:wght@100;700&family=Kanit:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+Thai:wght@100;700&family=Kanit:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Noto+Sans+Thai:wght@100..900&display=swap');
+
+
+body {
+    background-color: #eee4e1;
+    
+}
+
+h1 {
+    font-family: "Kanit", sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+p {
+    font-family: "Noto Sans Thai", sans-serif;
+    font-size: 20px;
+    margin-bottom: 30px;
+    margin-top: -30px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+label {
+    font-family: "Noto Sans Thai", sans-serif;
+    font-weight:bold;
+    font-size: 20px;
+    margin-bottom: 10px;
+    margin-top: 10px;
+    display: block;
+}
+
+#name_thai{
+    width: 99%;
+    margin-bottom: 15px;
+    margin-top: -20px;
+    height: 30px;
+}
+
+#name_english{
+    width: 99%;
+    margin-bottom: 15px;
+    margin-top: -20px;
+    height: 30px;
+}
+
+.form-row{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+
+.form-group{
+    flex: 1;
+    margin-right: 10px;
+}
+
+.form-group:last-child{
+    margin-right: 0;
+}
+
+#gender{
+    margin-top: 11px;
+    width: 60%;
+    height: 39px;
+}
+
+#id{
+    width: 70%;
+    height: 30px;
+}
+
+#faculty{
+    width: 70%;
+    height: 30px;
+}
+
+#email{
+    width: 98%;
+    height: 30px;
+}
+
+#birthday{
+    width: 70%;
+    height: 30px;
+    font-family: "Noto Sans Thai", sans-serif;
+}
+
+#book{
+    margin-top: 10px;
+    width: 70%;
+    height: 40px;
+}
+
+input{
+    padding: 5px;
+    margin-top:10px;
+    border-radius: 10px;
+    border: 1px solid #ccc
+}
+
+input::placeholder {
+    font-family: "Noto Sans Thai", sans-serif;
+    font-size: 15px;
+}
+
+select {
+    font-family: "Noto Sans Thai", sans-serif;
+    border-radius: 10px;
+}
+
+input[type="radio"] {
+    font-family: "Noto Sans Thai", sans-serif;
+}
+
+
+#register{
+    width: 20%;
+    height: 50px;
+    font-family: "Noto Sans Thai", sans-serif;
+    background-color: #fff;
+    font-weight: bold;
+    text-align: center;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.submit-container{
+    display: flex;
+    justify-content: center;
+}
+
+#register:hover{
+    background-color: #ccc;
+}
